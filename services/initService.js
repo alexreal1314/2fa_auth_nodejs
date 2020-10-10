@@ -36,8 +36,8 @@ const transporter = nodeMailer.createTransport({
         rejectUnauthorized: false
     },
     auth: {
-        user: 'info@bis-mart.com',
-        pass: 'get_right123!@#'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD
     }
 });
 
